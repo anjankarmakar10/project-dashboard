@@ -1,3 +1,4 @@
+import InputField from "@/components/InputField/InputField";
 import Image from "next/image";
 
 const Login = () => {
@@ -17,8 +18,16 @@ const Login = () => {
           <h3>Login</h3>
           <p>Donec tortor quam at duis tortor.</p>
           <div className="flex flex-col mt-10">
-            <input type="email" />
-            <input type="password" />
+            <InputField
+              placeholder="Enter your email"
+              type="email"
+              label="E-Mail"
+            />
+            <InputField
+              placeholder="Enter your password"
+              type="password"
+              label="Password"
+            />
             <button>Button</button>
             <button>Button</button>
           </div>
