@@ -1,3 +1,4 @@
+import Button from "@/components/Buttons/Button";
 import FormHeader from "@/components/FormHeader/FormHeader";
 import InputField from "@/components/InputField/InputField";
 import Image from "next/image";
@@ -31,11 +32,11 @@ const Login = () => {
               type="password"
               label="Password"
             />
-            <span className="text-neutral-600 font-semibold text-sm text-right mb-5">
+            <span className="cursor-pointer text-neutral-600 font-semibold text-sm text-right mb-5">
               Forgot password?
             </span>
-            <button>Button</button>
-            <button>Button</button>
+            <Button variant="fill">Login</Button>
+            <Button variant="outline">Sign Up</Button>
           </div>
         </div>
       </section>
