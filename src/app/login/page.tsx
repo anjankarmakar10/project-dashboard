@@ -1,3 +1,4 @@
+import FormHeader from "@/components/FormHeader/FormHeader";
 import InputField from "@/components/InputField/InputField";
 import Image from "next/image";
 
@@ -15,8 +16,10 @@ const Login = () => {
           />
         </div>
         <div className="flex-1 p-10">
-          <h3>Login</h3>
-          <p>Donec tortor quam at duis tortor.</p>
+          <FormHeader
+            title="Login"
+            subtitle="Donec tortor quam at duis tortor."
+          />
           <div className="flex flex-col mt-10">
             <InputField
               placeholder="Enter your email"
@@ -28,6 +31,9 @@ const Login = () => {
               type="password"
               label="Password"
             />
+            <span className="text-neutral-600 font-semibold text-sm text-right mb-5">
+              Forgot password?
+            </span>
             <button>Button</button>
             <button>Button</button>
           </div>
