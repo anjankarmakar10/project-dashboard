@@ -15,10 +15,10 @@ const Button = ({ children, variant, color, bg, onClick }: Props) => {
         borderColor: `${variant === "outline" && color}`,
       }}
       onClick={onClick}
-      className={`p-3 rounded-xl mb-5 ${
+      className={`p-3 rounded-md font-medium ${
         variant === "fill"
           ? ` text-white bg-blue-600`
-          : `bg-transparent border text-blue-600 border-blue-600`
+          : `bg-transparent border text-neutral-600 border-neutral-600`
       }`}
     >
       {children}

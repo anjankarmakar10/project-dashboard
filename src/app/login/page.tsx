@@ -36,7 +36,14 @@ const Login = () => {
               Forgot password?
             </span>
             <Button variant="fill">Login</Button>
-            <Button variant="outline">Sign Up</Button>
+            <div className="flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-400 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-400 mb-3 mt-16">
+              <p className="mx-3 mb-0 text-center  text-neutral-400 text-xs font-light">
+                or
+              </p>
+            </div>
+            <Button color="" variant="outline">
+              Sign Up
+            </Button>
           </div>
         </div>
       </section>
