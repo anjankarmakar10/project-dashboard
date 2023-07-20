@@ -6,7 +6,7 @@ import settings from "@/assets/icon/settings.svg";
 
 const Menus = () => {
   return (
-    <div className="flex gap-6 items-center">
+    <div className="hidden md:flex gap-6 items-center">
       <MenuItem title="Home" link="/" image={home} />
       <MenuItem title="Contents" link="/" image={contents} />
       <MenuItem title="Categories" link="/" image={categories} />

@@ -7,7 +7,7 @@ interface Props {
 
 const Profile = ({ name, image }: Props) => {
   return (
-    <article className="cursor-pointer bg-white rounded-full p-1 flex gap-1 items-center pr-3">
+    <article className="cursor-pointer bg-white rounded-full p-1 flex gap-1 items-center ml-auto">
       <Image
         className="rounded-full"
         alt="Profile"
@@ -15,7 +15,7 @@ const Profile = ({ name, image }: Props) => {
         height={30}
         src={image}
       />
-      <p className="mb-[-4px]">{name}</p>
+      <p className="mb-[-4px] hidden md:block mr-3">{name}</p>
     </article>
   );
 };
