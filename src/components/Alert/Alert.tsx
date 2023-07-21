@@ -6,7 +6,7 @@ interface Props {
   variant: "danger" | "success" | "info";
 }
 
-const Alert = ({ variant }: Props) => {
+const Alert = ({ variant, children }: Props) => {
   const image =
     variant === "danger" ? danger : variant === "success" ? success : danger;
 
@@ -19,9 +19,7 @@ const Alert = ({ variant }: Props) => {
       `}
     >
       <Image src={image} width={20} height={20} alt={""} />
-      <span className="mb-[-4px]">
-        Senectus malesuada suspendisse bibendum elit amet vitae.
-      </span>
+      <span className="mb-[-4px]">{children}</span>
     </article>
   );
 };

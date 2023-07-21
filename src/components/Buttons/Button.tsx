@@ -13,7 +13,7 @@ const Button = ({ children, variant, color, bg, onClick, size }: Props) => {
       style={{
         background: `${bg && variant === "fill" && bg}`,
         color: `${color && color}`,
-        borderColor: `${variant === "outline" && color}`,
+        borderColor: `${bg && bg}`,
         fontSize: `${size === "sm" ? ".875rem" : "1rem"}`,
         padding: `${size === "sm" && "7px 15px"}`,
       }}
