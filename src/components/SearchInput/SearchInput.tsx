@@ -11,7 +11,7 @@ const SearchInput = ({ placeholder, onSearchClick, onSubmit }: Props) => {
   return (
     <form
       onSubmit={onSubmit}
-      className="min-w-[350px] p-2 rounded-md border border-neutral-300 flex items-center gap-1"
+      className="max-w-[350px] p-2 rounded-md border border-neutral-300 flex items-center gap-1"
     >
       <input
         className="outline-none w-full placeholder:text-neutral-800 text-base"

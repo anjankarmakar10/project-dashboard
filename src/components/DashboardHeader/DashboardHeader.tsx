@@ -5,9 +5,9 @@ import SearchInput from "../SearchInput/SearchInput";
 
 const DashboardHeader = () => {
   return (
-    <header className="h-20 px-8 flex items-center bg-white gap-7">
-      <h2 className="font-semibold text-xl ">Add new post</h2>
-      <div className="flex items-center gap-6">
+    <header className="min-h-[75px] py-1 px-8 flex items-center bg-white gap-7">
+      <h2 className="font-semibold text-xl hidden md:block">Add new post</h2>
+      <div className="flex items-center gap-1 md:gap-6 flex-col md:flex-row">
         <ListItem title="Add Content" fontSize={16} width={24} image={add} />
         <ListItem title="Settings" fontSize={16} width={24} image={settings} />
       </div>
