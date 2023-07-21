@@ -3,16 +3,19 @@ interface Props {
   variant: "outline" | "fill";
   color?: string;
   bg?: string;
+  size?: "sm" | "md";
   onClick?: () => void;
 }
 
-const Button = ({ children, variant, color, bg, onClick }: Props) => {
+const Button = ({ children, variant, color, bg, onClick, size }: Props) => {
   return (
     <button
       style={{
         background: `${bg && variant === "fill" && bg}`,
         color: `${color && color}`,
         borderColor: `${variant === "outline" && color}`,
+        fontSize: `${size === "sm" ? ".875rem" : "1rem"}`,
+        padding: `${size === "sm" && "7px 15px"}`,
       }}
       onClick={onClick}
       className={`p-3 rounded-md font-medium ${
