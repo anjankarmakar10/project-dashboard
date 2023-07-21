@@ -2,7 +2,7 @@ import Image, { StaticImageData } from "next/image";
 
 interface Props {
   name: string;
-  image: StaticImageData;
+  image: StaticImageData | string;
 }
 
 const Profile = ({ name, image }: Props) => {
