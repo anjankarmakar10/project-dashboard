@@ -6,14 +6,7 @@ interface Props {
   rows?: number;
 }
 
-const TextArea = ({
-  label,
-  placeholder,
-  defaultValue,
-  inputRef,
-  cols,
-  rows,
-}: Props) => {
+const TextArea = ({ label, placeholder, defaultValue, cols, rows }: Props) => {
   return (
     <div className="mb-5 text-neutral-800">
       <label className="text-sm" htmlFor={label}>
