@@ -3,7 +3,6 @@ interface Props {
   placeholder?: string;
   type: "text" | "email" | "number" | "password";
   defaultValue?: string | number;
-  inputRef?: React.RefObject<HTMLInputElement>;
 }
 
 const InputField = ({
@@ -19,7 +18,6 @@ const InputField = ({
         {label}
       </label>
       <input
-        ref={inputRef}
         defaultValue={defaultValue}
         placeholder={placeholder}
         className="w-full border border-neutral-300 py-3 px-4 placeholder:text-neutral-800 placeholder:text-sm mt-1 rounded-md  outline-none focus:outline focus:outline-blue-600 "
