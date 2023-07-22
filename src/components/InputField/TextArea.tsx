@@ -2,7 +2,6 @@ interface Props {
   label: string;
   placeholder?: string;
   defaultValue?: string | number;
-  inputRef?: React.RefObject<HTMLInputElement>;
   cols?: number;
   rows?: number;
 }
@@ -22,7 +21,6 @@ const TextArea = ({
       </label>
 
       <textarea
-        ref={inputRef}
         name={label}
         placeholder={placeholder}
         cols={cols}

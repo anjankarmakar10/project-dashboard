@@ -12,6 +12,7 @@ const Pagination = ({ page, setPage }: Props) => {
         .fill("")
         .map((_, index) => (
           <Button
+            key={index}
             onClick={() => setPage(index + 1)}
             bg={index + 1 === page ? "#2563EB" : ""}
             color={index + 1 === page ? "#fff" : ""}
