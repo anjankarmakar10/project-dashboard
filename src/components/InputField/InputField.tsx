@@ -5,13 +5,7 @@ interface Props {
   defaultValue?: string | number;
 }
 
-const InputField = ({
-  label,
-  placeholder,
-  type,
-  defaultValue,
-  inputRef,
-}: Props) => {
+const InputField = ({ label, placeholder, type, defaultValue }: Props) => {
   return (
     <div className="mb-5 text-neutral-800">
       <label className="text-sm" htmlFor={label}>
