@@ -15,10 +15,10 @@ const Button = ({ children, variant, color, bg, onClick, size }: Props) => {
         color: `${color && color}`,
         borderColor: `${bg && bg}`,
         fontSize: `${size === "sm" ? ".875rem" : "1rem"}`,
-        padding: `${size === "sm" && "7px 15px"}`,
+        padding: `${size === "sm" && "7px 15px 5px 15px"}`,
       }}
       onClick={onClick}
-      className={`p-3 rounded-md font-medium ${
+      className={`p-3  rounded-md font-medium  ${
         variant === "fill"
           ? ` text-white bg-blue-600`
           : `bg-transparent border text-neutral-600 border-neutral-600`

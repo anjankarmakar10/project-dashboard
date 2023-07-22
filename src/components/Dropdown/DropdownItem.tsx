@@ -8,12 +8,7 @@ interface Props {
 
 const DropdownItem = ({ children, value, onClick }: Props) => {
   return (
-    <option
-      onClick={onClick}
-      value={value}
-      className="font-normal text-base"
-      value=""
-    >
+    <option onClick={onClick} value={value} className="font-normal text-base">
       {children}
     </option>
   );

@@ -16,7 +16,7 @@ const ImageButton = ({ image, variant, color, bg, children, size }: Props) => {
       style={{
         background: `${bg && variant === "fill" && bg}`,
         color: `${color && color}`,
-        borderColor: `${variant === "outline" && bg}`,
+        borderColor: `${bg && bg}`,
         fontSize: `${size === "sm" ? ".75rem" : "1rem"}`,
       }}
       className={`flex w-fit rounded font-normal p-1 border items-center  gap-1 ${
